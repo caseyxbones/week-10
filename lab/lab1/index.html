@@ -7,24 +7,52 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/leaflet.css" />
     <!-- Choose a frontend framework CSS file: -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <!-- <link rel="stylesheet" href="css/material.css" /> -->
     <!-- <link rel="stylesheet" href="css/assembly.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Sidebar -->
+    <div class ="far_left">
+      <center> <span id=cart_icon class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></center>
+      <ul class="nav nav-pills nav-stacked">
+        <li role="presentation" class="active"><a href="#">Manufacturers</a></li>
+        <li role="presentation"><a href="#">Purchases</a></li>
+        <li role="presentation"><a href="#">Basket Secrets</a></li>
+      </ul>
+    </div>
     <div class="sidebar">
       <nav class="navbar navbar-default">
         <div class="container-fluid clearfix">
           <div class="topright-button" style="float: right">
-            [Add New]
+            <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Add New
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Manufacturer</a></li>
+                <li><a href="#">Purchase</a></li>
+                <li><a href="#">Basket Secret</a></li>
+              </ul>
+          </div>
           </div>
           <div class="navbar-header">
             <a href="#">Manufacturers</a>
           </div>
         </div>
       </nav>
+      <div class="row">
+        <div class="search_input">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></button>
+            </span>
+          </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+      </div><!-- /.row -->
       <div class="item">
         <h2 class="item-heading">Tandy’s Basketweavers</h2>
         <div>490 Freedom Drive<br>
@@ -60,7 +88,7 @@
     <script src="js/jquery-2.2.0.js"></script>
     <script src="js/leaflet.js"></script>
     <!-- Choose a frontend framework Javascript file: -->
-    <!-- <script src="js/bootstrap.js"></script> -->
+    <script src="js/bootstrap.js"></script>
     <!-- <script src="js/material.js"></script> -->
     <!-- <script src="js/assembly.js"></script>  -->
     <script src="js/setup.js"></script>

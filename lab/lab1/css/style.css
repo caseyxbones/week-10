@@ -7,21 +7,47 @@ body {
 .map {
     position: absolute;
     right: 0px;
-    left: 340px;
+    left: 640px;
     height: 100%;
     top: 0;
 }
 
-.sidebar {
+#cart_icon {
+  font-size: 5em;
+  padding-bottom:25px;
+}
+
+.far_left {
     position: absolute;
     left: 0px;
-    width: 340px;
+    width: 300px;
     top: 0;
     bottom: 0;
     overflow-y: auto;
     padding: 20px;
     padding-bottom: 60px;
+    background-color: #eee;
 }
+
+.search_input{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sidebar {
+    position: absolute;
+    float:right;
+    left: 300px;
+    width: 340px;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    padding: 10px;
+    padding-bottom: 60px;
+}
+
 
 .item {
     padding: 10px;
@@ -68,6 +94,7 @@ body {
     font-size: 14px;
     font-weight: bold;
 }
+
 
 /* =============
 Media Queries
